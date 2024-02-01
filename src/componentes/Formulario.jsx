@@ -1,4 +1,4 @@
-import { Button, Form, FormControl, FormGroup } from "react-bootstrap";
+import { Button, Container, Form, FormControl, FormGroup } from "react-bootstrap";
 import { useState, useEffect  } from "react";
 import MostrarPeliculas from "./MostrarPeliculas";
 const Formulario = () => {
@@ -26,12 +26,13 @@ const Formulario = () => {
   });
   return (
     <section>
-      <Form onSubmit={handleSubmit}>
+    <Container className="w-50 my-4 border border-secondary-subtle py-5 shadow rounded">
+      <Form onSubmit={handleSubmit} >
         <Form.Group
           className="mb-3 d-flex"
           controlId="exampleForm.ControlInput1"
         >
-          <Form.Label>Titulo: </Form.Label>
+          <Form.Label className="me-2">Titulo: </Form.Label>
           <Form.Control
             type="text"
             placeholder="Titanic"
@@ -45,7 +46,7 @@ const Formulario = () => {
         </Form.Group>
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
           <div className="d-flex mb-3 align-items-center justify-content-between inputsColumna">
-            <Form.Label>Género: </Form.Label>
+            <Form.Label className="me-2">Género: </Form.Label>
             <Form.Select
               required
               onChange={(e) =>
@@ -61,7 +62,7 @@ const Formulario = () => {
           </div>
         </Form.Group>
         <Form.Group className="mb-3" controlId="controlTextarea">
-          <Form.Label>Descripción: </Form.Label>
+          <Form.Label className="me-2">Descripción: </Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
@@ -74,13 +75,14 @@ const Formulario = () => {
           />
         </Form.Group>
         <Form.Group>
-          <Button variant="info" className="mx-2" type="submit">
+          <Button variant="info" className="m-3 shadow rounded" type="submit">
             Enviar
           </Button>
         </Form.Group>
       </Form>
+      </Container>
       <MostrarPeliculas peliculas={peliculas}></MostrarPeliculas>
-    </section>
+      </section>
   );
 };
 
