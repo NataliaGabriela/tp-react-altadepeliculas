@@ -10,7 +10,7 @@ género (en un select donde podemos seleccionar comedia, drama o infantil)
 Cuando presione enviar, guardar esta película en el localstorage y mostrar en una card.
 
 
-Demo Deply del proyecto tp-react-altapeliculas.netlify.app
+Demo Deply del proyecto https://tp-react-altapeliculas.netlify.app/
 
 Librerias 📚 Bootstrap v5.3.2
 
