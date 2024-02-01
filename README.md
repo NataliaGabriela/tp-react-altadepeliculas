@@ -1,6 +1,7 @@
 TP REACT ROLLINGCODE
 
 Ejercicios de introducción a React: Alta de Paliculas
+
 Consigna:
 Crear una aplicación web con react que contenga un formulario con los siguientes campos:
 nombre (en un campo de texto)
