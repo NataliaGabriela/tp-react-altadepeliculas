@@ -1,4 +1,4 @@
-TP REACT ROLLINGCODDE
+TP REACT ROLLINGCODE
 
 Ejercicios de introducción a React: Alta de Paliculas
 Consigna:
