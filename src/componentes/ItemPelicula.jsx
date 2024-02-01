@@ -2,7 +2,7 @@ import "../App.css";
 import { Card } from "react-bootstrap";
 const ItemPelicula = ({ pelicula }) => {
   return (
-    <Card className="my-2 shadow rounded">
+    <Card className="my-2 shadow rounded p-3">
       <Card.Body className="px-0">
         <Card.Title className="mx-2">
           Titulo: {pelicula.nombrePelicula}
